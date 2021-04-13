@@ -5,7 +5,7 @@ PortGroup           python 1.0
 PortGroup           gitlab 1.0
 
 gitlab.instance     https://foss.heptapod.net
-gitlab.setup        mercurial mercurial_keyring 1.3.1
+gitlab.setup        mercurial mercurial_keyring 1.4.0
 
 name                py-${name}
 
@@ -22,9 +22,9 @@ long_description \
     KWallet, OSXKeyChain, specific solutions for Win32 and command line). This \
     extension uses and wraps services of the keyring library.
 
-checksums           rmd160  281bcd19171ab0e3832087161046d6d023c1a04d \
-                    sha256  2d17b3eeef284b026e927232e97dd82db6b0630896bf2ca432023379580d5310 \
-                    size    19273
+checksums           rmd160  d3e1495da41be79dd41e7d837e546fbdc1233c36 \
+                    sha256  ce232b0f095c03e03f8f5aff2d39559c91e2a9e8cdb3401f81803f39cfe1998d \
+                    size    20536
 
 python.versions     27 37 38 39
 

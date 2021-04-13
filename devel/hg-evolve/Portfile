@@ -5,7 +5,7 @@ PortGroup               python 1.0
 PortGroup               gitlab 1.0
 
 gitlab.instance         https://foss.heptapod.net
-gitlab.setup            mercurial evolve 10.0.2
+gitlab.setup            mercurial evolve 10.3.0
 name                    hg-evolve
 revision                0
 
@@ -27,11 +27,11 @@ long_description        Additional history rewriting commands for Mercurial \
                         developers to safely rewrite the same parts of history \
                         in a distributed way.
 
-checksums               rmd160  a3441a1feea1ca3eb840bc64e37063afd5cd449e \
-                        sha256  ad84282d1c5f0af53aedbfb90921edab088b076290120d37c17da1c0aa30e672 \
-                        size    729305
+checksums               rmd160  59f4a73382ddfb07d1d214f77ff60c44a1dd6049 \
+                        sha256  ca8f0bf179d42b2904238f223d581e8c87a68b01d42c5357e443055d236c9cd0 \
+                        size    750753
 
-python.default_version  38
+python.default_version  39
 
 depends_lib-append      port:mercurial
 

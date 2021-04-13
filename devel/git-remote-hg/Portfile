@@ -5,6 +5,7 @@ PortGroup github    1.0
 
 name                git-remote-hg
 github.setup        mnauw git-remote-hg 1.0.2.1 v
+revision            1
 categories          devel python
 platforms           darwin
 maintainers         {landonf @landonf} openmaintainer
@@ -18,10 +19,10 @@ checksums           rmd160  433a2de35530aa3374f9001650c11e382530643f \
 
 depends_build       port:asciidoc
 depends_lib         port:mercurial \
-                    port:python38
+                    port:python39
 
 post-patch {
-    reinplace "1 s|/usr/bin/env python.*|${prefix}/bin/python3.8|g" \
+    reinplace "1 s|/usr/bin/env python.*|${prefix}/bin/python3.9|g" \
         ${worksrcpath}/git-remote-hg
 
     reinplace -E "s|^(prefix\[\[:space:\]\].*.?=).*|\\1 ${prefix}|g" \

@@ -6,7 +6,7 @@ PortGroup           python 1.0
 name                mercurial
 # don't forget to update dependents for mercurial:
 # port echo rdepends:mercurial and \( name:hg or name:mercurial \) | grep -v 'py[[:digit:]]'
-version             5.5.2
+version             5.7.1
 revision            0
 categories          devel python
 platforms           darwin
@@ -32,11 +32,11 @@ long_description    Mercurial is a fast, lightweight Source Control Management \
 homepage            https://www.mercurial-scm.org
 master_sites        ${homepage}/release/
 
-checksums           rmd160  6de828c1b8dc08e68fd9c08b9b108ffcfed3e601 \
-                    sha256  84930ad47a25d1f5db47acf48662bd199e45b7c331d8af6f4a8c46449ad8f372 \
-                    size    7761053
+checksums           rmd160  3f059122baa88a4cbfa0ec16681b07f560b624df \
+                    sha256  cb5139144ccb2ef648f36963c8606d47dea1cb0e22aa2c055d6f860ce3fde7b0 \
+                    size    7900727
 
-python.default_version 38
+python.default_version 39
 
 depends_build       port:py${python.version}-docutils
 
